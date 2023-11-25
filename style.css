@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.header {
+    background-image: url("./images/desktop/image-hero.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+.header i {
+    display: none;
+}
+.section {
+    display: flex;
+    align-items: center;
+    padding: 6rem 8rem 8rem;
+    justify-content: space-between;
+    font-family: "Alata", sans-serif;
+}
+.section > p {
+    font-size: 32px;
+    cursor: pointer;
+}
+.section ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.section ul li {
+    cursor: pointer;
+}
+.header div {
+    border: 1px solid #fff;
+    padding: 2rem;
+    width: 48%;
+    margin-left: 8rem;
+}
+.header div p {
+    font-size: 72px;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.article {
+    display: flex;
+    margin: 8rem;
+    align-items: end;
+    position: relative;
+}
+
+.article div {
+    padding: 4rem 4rem 0;
+    position: absolute;
+    background: #fff;
+    width: 55%;
+    height: 60%;
+    right: 0;
+    text-align: center;
+    display: grid;
+    align-items: end;
+}
+
+.article div h2 {
+    font-size: 40px;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+}
+.article div p {
+    padding: 0 1rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.main {
+    padding: 0 8rem;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.m_header {
+    display: flex;
+    padding: 0 0 4rem 0;
+    justify-content: space-between;
+    font-family: "Josefin Sans", sans-serif;
+    align-items: center;
+}
+.m_header p {
+    font-size: 32px;
+}
+.m_header button {
+    background: #fff;
+    padding: 0.5rem 2rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0.1px solid black;
+}
+.allSee {
+    display: none;
+}
+.images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.divImage {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    bottom: 1rem;
+    text-align: justify;
+    font-size: 28px;
+    color: #fff;
+    width: 60%;
+    text-align: justify;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 4rem 8rem;
+    justify-content: space-between;
+    color: #fff;
+    background: #000;
+    font-family: "Alata", sans-serif;
+}
+.footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    padding: 1rem 0;
+}
+
+.footer .desc {
+    color: hsl(0, 0%, 41%);
+}
+
+.menuHamb {
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+}
+.menuHamb div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuHamb p {
+    font-family: "Alata", sans-serif;
+    font-size: 20px;
+}
+.menuHamb i {
+    cursor: pointer;
+}
+.menuHamb ul {
+    margin: 6rem 0;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: hsl(0, 0%, 73%);
+}
+.menuHamb ul li {
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+/*------------------------------*/
+@media (max-width: 1140px) {
+    .header {
+        background-image: url("./images/mobile/image-hero.jpg");
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
+    }
+
+    .images {
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem auto;
+        align-items: center;
+    }
+    .article img {
+        width: 100%;
+        margin: 0.5rem;
+    }
+    .article div {
+        margin: 1rem auto;
+        position: relative;
+        width: 100%;
+        padding: 1rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 940px) {
+    body {
+        width: auto;
+    }
+    .header div p {
+        font-size: 62px;
+    }
+    .header div {
+        margin: 8rem 4rem;
+        width: auto;
+    }
+    .header i {
+        display: flex;
+        cursor: pointer;
+    }
+    .section {
+        padding: 2rem 4rem 4rem;
+    }
+
+    .section ul {
+        display: none;
+    }
+    .main {
+        padding: 2rem;
+    }
+    .title {
+        left: 1rem;
+        text-align: left;
+        justify-content: flex-start;
+    }
+    .images {
+        justify-self: center;
+        padding: 0.5rem;
+    }
+    .m_header {
+        justify-content: center;
+    }
+    .seeAll {
+        display: none;
+    }
+    .allSee {
+        display: flex;
+        justify-content: center;
+    }
+    .allSee button {
+        background: #fff;
+        padding: 0.5rem 2rem;
+        letter-spacing: 3px;
+        cursor: pointer;
+        text-transform: uppercase;
+        border: 0.1px solid black;
+        margin: 1rem auto;
+    }
+    .footer {
+        padding: 2rem 4rem;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        /* box-sizing: content-box; */
+    }
+    .titleFooter {
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .footer ul {
+        justify-content: center;
+    }
+    .footer .menus {
+        display: block;
+    }
+    .menus li {
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+    .footer ul i {
+        font-size: 32px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 640px) {
+    .header div p {
+        font-size: 32px;
+        word-wrap: break-word;
+    }
+    .article div h2 {
+        font-size: 32px;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+}
